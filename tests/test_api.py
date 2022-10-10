@@ -2,9 +2,9 @@ import requests
 
 import pytest
 
-from ..flask_api import app as api
+from app import app as api
 
-@pytest.fixture()
+@pytest.fixture(scope='module')
 def app():
     api.config.update({
         "TESTING": True,
@@ -35,5 +35,6 @@ def test_fetch_asura(client):
      'last_updated': 'December 29, 2021', 
      'url': 'https://asura.gg/solo-leveling-chapter-179-end/', 'slug': 'solo-leveling'}
     returned = r.json['results'][0]
+    print("Result:", returned)
 
     assert returned == expected

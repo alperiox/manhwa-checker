@@ -1,0 +1,26 @@
+{
+  "name": "manhwa_checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperiox/manhwa-checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alperiox/manhwa-checker/issues"
+  },
+  "homepage": "https://github.com/alperiox/manhwa-checker#readme"
+}

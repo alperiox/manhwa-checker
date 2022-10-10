@@ -1,4 +1,4 @@
-from ..backend.utils.proxy import StandardHTTPProxyRotator
+from backend.utils.proxy import StandardHTTPProxyRotator
 import requests
 
 def test_StandardHTTPProxyRotator():

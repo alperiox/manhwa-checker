@@ -1,4 +1,4 @@
-from ..backend.scrapers import Asura
+from backend.scrapers import Asura
 
 import pytest
 

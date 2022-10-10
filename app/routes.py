@@ -1,12 +1,11 @@
-from flask import Flask, request, jsonify
+from app import app
+
+from flask import request, jsonify
 
 from backend.scrapers import Asura, AsyncAsura
 
 from aiohttp import ClientSession
 import asyncio
-
-
-app = Flask(__name__)
 
 async def get(sess, url):
     response = await sess.get(url)
@@ -22,7 +21,3 @@ async def fetch_asura():
         result = await asyncio.gather(task)
 
     return jsonify({"results": result})
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
